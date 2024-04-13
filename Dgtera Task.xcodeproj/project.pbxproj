@@ -141,8 +141,10 @@
 			children = (
 				CB712E542BCAA8B700B7D114 /* AppDelegate.swift */,
 				CB712E842BCAB09F00B7D114 /* Helpers */,
-				CB712E582BCAA8B700B7D114 /* ViewController.swift */,
-				CB712E5A2BCAA8B700B7D114 /* Main.storyboard */,
+				CB712E892BCAB1EE00B7D114 /* Cells */,
+				CB712E872BCAB1C700B7D114 /* Controllers */,
+				CB712E882BCAB1D500B7D114 /* ViewModels */,
+				CB712E8A2BCAB1FF00B7D114 /* Storyboards */,
 				CB712E5D2BCAA8B900B7D114 /* Assets.xcassets */,
 				CB712E5F2BCAA8B900B7D114 /* LaunchScreen.storyboard */,
 				CB712E622BCAA8B900B7D114 /* Info.plist */,
@@ -173,6 +175,36 @@
 				CB712E852BCAB0B300B7D114 /* NetworkManager.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		CB712E872BCAB1C700B7D114 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB712E582BCAA8B700B7D114 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CB712E882BCAB1D500B7D114 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CB712E892BCAB1EE00B7D114 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CB712E8A2BCAB1FF00B7D114 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CB712E5A2BCAA8B700B7D114 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
