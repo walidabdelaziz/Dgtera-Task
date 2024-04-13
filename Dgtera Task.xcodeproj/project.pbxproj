@@ -19,6 +19,7 @@
 		CB712E782BCAA8B900B7D114 /* Dgtera_TaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E772BCAA8B900B7D114 /* Dgtera_TaskUITestsLaunchTests.swift */; };
 		CB712E862BCAB0B300B7D114 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E852BCAB0B300B7D114 /* NetworkManager.swift */; };
 		CB712E8C2BCAB23C00B7D114 /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E8B2BCAB23C00B7D114 /* SplashVC.swift */; };
+		CB712E8E2BCAB2CC00B7D114 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E8D2BCAB2CC00B7D114 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CB712E772BCAA8B900B7D114 /* Dgtera_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dgtera_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB712E852BCAB0B300B7D114 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		CB712E8B2BCAB23C00B7D114 /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		CB712E8D2BCAB2CC00B7D114 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.release.xcconfig"; sourceTree = "<group>"; };
 		FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				CB712E852BCAB0B300B7D114 /* NetworkManager.swift */,
+				CB712E8D2BCAB2CC00B7D114 /* Consts.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB712E862BCAB0B300B7D114 /* NetworkManager.swift in Sources */,
+				CB712E8E2BCAB2CC00B7D114 /* Consts.swift in Sources */,
 				CB712E552BCAA8B700B7D114 /* AppDelegate.swift in Sources */,
 				CB712E8C2BCAB23C00B7D114 /* SplashVC.swift in Sources */,
 			);
