@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		500C4BC4DEEB5706F19D5698 /* Pods_Dgtera_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB36FA12FBBAED6BDF23C50D /* Pods_Dgtera_Task.framework */; };
+		6AD1E1B187E92B3480772EDA /* Pods_Dgtera_TaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C52604E67845D6654A70CD0 /* Pods_Dgtera_TaskTests.framework */; };
+		B1036A59098FC53D922DE4D7 /* Pods_Dgtera_Task_Dgtera_TaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A232D7419DAD679D769B4C /* Pods_Dgtera_Task_Dgtera_TaskUITests.framework */; };
 		CB712E552BCAA8B700B7D114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E542BCAA8B700B7D114 /* AppDelegate.swift */; };
 		CB712E572BCAA8B700B7D114 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E562BCAA8B700B7D114 /* SceneDelegate.swift */; };
 		CB712E592BCAA8B700B7D114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E582BCAA8B700B7D114 /* ViewController.swift */; };
@@ -36,6 +39,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		038C2204CBE3F00D49D37B44 /* Pods-Dgtera TaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera TaskTests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera TaskTests/Pods-Dgtera TaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		0DB7D015D1566F94789D50AB /* Pods-Dgtera Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.debug.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.debug.xcconfig"; sourceTree = "<group>"; };
+		17A232D7419DAD679D769B4C /* Pods_Dgtera_Task_Dgtera_TaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dgtera_Task_Dgtera_TaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C52604E67845D6654A70CD0 /* Pods_Dgtera_TaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dgtera_TaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51CB1CB9F699F305CE9E1F93 /* Pods-Dgtera TaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera TaskTests.debug.xcconfig"; path = "Target Support Files/Pods-Dgtera TaskTests/Pods-Dgtera TaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86C7D0C53151D0222FE2602C /* Pods-Dgtera Task-Dgtera TaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB36FA12FBBAED6BDF23C50D /* Pods_Dgtera_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dgtera_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB712E512BCAA8B700B7D114 /* Dgtera Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dgtera Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB712E542BCAA8B700B7D114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB712E562BCAA8B700B7D114 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		CB712E712BCAA8B900B7D114 /* Dgtera TaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dgtera TaskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB712E752BCAA8B900B7D114 /* Dgtera_TaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dgtera_TaskUITests.swift; sourceTree = "<group>"; };
 		CB712E772BCAA8B900B7D114 /* Dgtera_TaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dgtera_TaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.release.xcconfig"; sourceTree = "<group>"; };
+		FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				500C4BC4DEEB5706F19D5698 /* Pods_Dgtera_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD1E1B187E92B3480772EDA /* Pods_Dgtera_TaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1036A59098FC53D922DE4D7 /* Pods_Dgtera_Task_Dgtera_TaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C26C9799F7F9B2CB22E8F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DB7D015D1566F94789D50AB /* Pods-Dgtera Task.debug.xcconfig */,
+				CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */,
+				86C7D0C53151D0222FE2602C /* Pods-Dgtera Task-Dgtera TaskUITests.debug.xcconfig */,
+				FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */,
+				51CB1CB9F699F305CE9E1F93 /* Pods-Dgtera TaskTests.debug.xcconfig */,
+				038C2204CBE3F00D49D37B44 /* Pods-Dgtera TaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		370316E80184FA855AC83A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB36FA12FBBAED6BDF23C50D /* Pods_Dgtera_Task.framework */,
+				17A232D7419DAD679D769B4C /* Pods_Dgtera_Task_Dgtera_TaskUITests.framework */,
+				4C52604E67845D6654A70CD0 /* Pods_Dgtera_TaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB712E482BCAA8B700B7D114 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				CB712E6A2BCAA8B900B7D114 /* Dgtera TaskTests */,
 				CB712E742BCAA8B900B7D114 /* Dgtera TaskUITests */,
 				CB712E522BCAA8B700B7D114 /* Products */,
+				1C26C9799F7F9B2CB22E8F81 /* Pods */,
+				370316E80184FA855AC83A4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB712E7B2BCAA8B900B7D114 /* Build configuration list for PBXNativeTarget "Dgtera Task" */;
 			buildPhases = (
+				2EA90D1FAB46F66FBE698936 /* [CP] Check Pods Manifest.lock */,
 				CB712E4D2BCAA8B700B7D114 /* Sources */,
 				CB712E4E2BCAA8B700B7D114 /* Frameworks */,
 				CB712E4F2BCAA8B700B7D114 /* Resources */,
+				8E93EA683C7920071766212A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB712E7E2BCAA8B900B7D114 /* Build configuration list for PBXNativeTarget "Dgtera TaskTests" */;
 			buildPhases = (
+				FCA5A6CBB2F96377074D905C /* [CP] Check Pods Manifest.lock */,
 				CB712E632BCAA8B900B7D114 /* Sources */,
 				CB712E642BCAA8B900B7D114 /* Frameworks */,
 				CB712E652BCAA8B900B7D114 /* Resources */,
+				651E5910A4B529C21219A6B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB712E812BCAA8B900B7D114 /* Build configuration list for PBXNativeTarget "Dgtera TaskUITests" */;
 			buildPhases = (
+				8E05843E131894633AB4E9F3 /* [CP] Check Pods Manifest.lock */,
 				CB712E6D2BCAA8B900B7D114 /* Sources */,
 				CB712E6E2BCAA8B900B7D114 /* Frameworks */,
 				CB712E6F2BCAA8B900B7D114 /* Resources */,
+				61FE9C75C08D6159D1D318FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +299,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EA90D1FAB46F66FBE698936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dgtera Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61FE9C75C08D6159D1D318FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		651E5910A4B529C21219A6B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera TaskTests/Pods-Dgtera TaskTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera TaskTests/Pods-Dgtera TaskTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dgtera TaskTests/Pods-Dgtera TaskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E05843E131894633AB4E9F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dgtera Task-Dgtera TaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E93EA683C7920071766212A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCA5A6CBB2F96377074D905C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dgtera TaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CB712E4D2BCAA8B700B7D114 /* Sources */ = {
@@ -437,6 +604,7 @@
 		};
 		CB712E7C2BCAA8B900B7D114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DB7D015D1566F94789D50AB /* Pods-Dgtera Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +633,7 @@
 		};
 		CB712E7D2BCAA8B900B7D114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +662,7 @@
 		};
 		CB712E7F2BCAA8B900B7D114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CB1CB9F699F305CE9E1F93 /* Pods-Dgtera TaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +683,7 @@
 		};
 		CB712E802BCAA8B900B7D114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 038C2204CBE3F00D49D37B44 /* Pods-Dgtera TaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +704,7 @@
 		};
 		CB712E822BCAA8B900B7D114 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C7D0C53151D0222FE2602C /* Pods-Dgtera Task-Dgtera TaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +723,7 @@
 		};
 		CB712E832BCAA8B900B7D114 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
