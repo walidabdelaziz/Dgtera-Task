@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UIKit
 import NVActivityIndicatorView
+import SDWebImage
 
 class Utils{
     static var indicator: NVActivityIndicatorView?
@@ -26,5 +28,21 @@ class Utils{
             indicator?.stopAnimating()
             indicator = nil
         }
+    }
+    static func setImageFromBase64(imageBase64: String?, img: UIImageView, placeholder: String? = nil) {
+        guard let base64String = imageBase64, let imageData = Data(base64Encoded: base64String) else {
+            img.image = placeholder != nil ? UIImage(named: placeholder!) : nil
+            img.contentMode = .scaleAspectFill
+            return
+        }
+        guard let image = UIImage(data: imageData) else {
+            img.image = placeholder != nil ? UIImage(named: placeholder!) : nil
+            img.contentMode = .scaleAspectFill
+            return
+        }
+        img.image = image
+    }
+    static func getAppCurrency() -> String{
+        return "SAR"
     }
 }

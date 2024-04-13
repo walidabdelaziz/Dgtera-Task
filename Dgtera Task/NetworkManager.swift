@@ -24,10 +24,14 @@ actor NetworkManager {
                 encoding: JSONEncoding.prettyPrinted,
                 headers: HTTPHeaders(headers)
             ).responseDecodable(of: type) { response in
+                print("url \(url)")
+                print("params \(params ?? [:])")
                 switch response.result {
                 case let .success(data):
+                    print("response \(data)")
                     continuation.resume(returning: data)
                 case let .failure(error):
+                    print("error \(error)")
                     continuation.resume(throwing: error)
                 }
             }

@@ -40,6 +40,9 @@ class LoginVC: UIViewController {
             .bind { [weak self](success) in
                 guard let self = self else{return}
                 if success {
+                    let storyboard = UIStoryboard(name: "Products", bundle: nil)
+                    let ProductsVC = storyboard.instantiateViewController(withIdentifier: "ProductsVC")
+                    self.navigationController?.pushViewController(ProductsVC, animated: true)
                 }
             }.disposed(by: disposeBag)
         

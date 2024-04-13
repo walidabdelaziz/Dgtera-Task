@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Dgtera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOI-Bx-YVa">
-                                <rect key="frame" x="16" y="91" width="361" height="33.666666666666657"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <rect key="frame" x="16" y="75" width="361" height="31.333333333333329"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36y-Zi-Jxh">
-                                <rect key="frame" x="20" y="188.66666666666666" width="353" height="40"/>
+                                <rect key="frame" x="20" y="170.33333333333334" width="353" height="40"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.53333333329999999" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
@@ -41,7 +41,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="36y-Zi-Jxh" firstAttribute="top" secondItem="jOI-Bx-YVa" secondAttribute="bottom" constant="64" id="3NO-Yy-nnR"/>
-                            <constraint firstItem="jOI-Bx-YVa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="PEa-zQ-icb"/>
+                            <constraint firstItem="jOI-Bx-YVa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="PEa-zQ-icb"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="36y-Zi-Jxh" secondAttribute="trailing" constant="20" id="h4h-mL-KKv"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="jOI-Bx-YVa" secondAttribute="trailing" constant="16" id="i69-uE-1wz"/>
                             <constraint firstItem="36y-Zi-Jxh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="oG3-Yb-olh"/>
