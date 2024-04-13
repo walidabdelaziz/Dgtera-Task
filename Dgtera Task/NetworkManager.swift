@@ -7,48 +7,31 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
 
-class NetworkManager {
-    static let shared = NetworkManager()
-    private init() {}
-    
-    func request<T: Decodable>(_ url: String,
-                                method: HTTPMethod = .get,
-                                parameters: Parameters? = nil,
-                                encoding: ParameterEncoding = JSONEncoding.prettyPrinted,
-                                withToken: Bool? = false) async throws -> (T, Int?) {
-        let headers = ["Accept": "application/json"]
-        if parameters != nil {
-            print("params: \(parameters ?? Parameters())")
+actor NetworkManager {
+    func request<T: Decodable>(
+        method: HTTPMethod,
+        url: String,
+        headers: [String: String],
+        params: Parameters?,
+        of type: T.Type
+    ) async throws -> T {
+        return try await withCheckedThrowingContinuation { continuation in
+            AF.request(
+                url,
+                method: method,
+                parameters: params,
+                encoding: JSONEncoding.prettyPrinted,
+                headers: HTTPHeaders(headers)
+            ).responseDecodable(of: type) { response in
+                switch response.result {
+                case let .success(data):
+                    continuation.resume(returning: data)
+                case let .failure(error):
+                    continuation.resume(throwing: error)
+                }
+            }
         }
-        print("URL: \(url)")
-        
-        let (data, response) = try await URLSession.shared.data(from: URL(string: url)!)
-        let statusCode = (response as? HTTPURLResponse)?.statusCode
-        
-        do {
-            let decodedObject = try JSONDecoder().decode(T.self, from: data)
-            print("response: \(decodedObject)")
-            return (decodedObject, statusCode)
-        } catch {
-            print(error)
-            throw error
-        }
-    }
-    func requestJSON(_ url: String,
-                     method: HTTPMethod = .get,
-                     parameters: Parameters? = nil,
-                     encoding: ParameterEncoding = JSONEncoding.prettyPrinted,
-                     withToken: Bool? = false) async throws -> (JSON, Int?) {
-        let headers = ["Accept": "application/json"]
-        if parameters != nil {
-            print("params: \(parameters ?? Parameters())")
-        }
-        print("URL: \(url)")
-        let (data, response) = try await URLSession.shared.data(from: URL(string: url)!)
-        let statusCode = (response as? HTTPURLResponse)?.statusCode
-        let json = JSON(data)
-        return (json, json["response_status"].int ?? 301)
     }
 }
+
