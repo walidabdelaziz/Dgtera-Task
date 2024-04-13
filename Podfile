@@ -5,8 +5,9 @@ target 'Dgtera Task' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+
   # Pods for Dgtera Task
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
@@ -15,7 +16,7 @@ target 'Dgtera Task' do
   target 'Dgtera TaskTests' do
     inherit! :search_paths
     # Pods for testing
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
