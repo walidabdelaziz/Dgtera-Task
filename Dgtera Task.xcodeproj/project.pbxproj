@@ -24,6 +24,9 @@
 		CB712E922BCAB5E600B7D114 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB712E912BCAB5E600B7D114 /* Auth.storyboard */; };
 		CB712E952BCAE94700B7D114 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E942BCAE94700B7D114 /* Auth.swift */; };
 		CB712E982BCAEC8500B7D114 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E972BCAEC8500B7D114 /* AuthManager.swift */; };
+		CB712E9A2BCAF02200B7D114 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E992BCAF02200B7D114 /* AuthViewModel.swift */; };
+		CB712E9C2BCAF34000B7D114 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E9B2BCAF34000B7D114 /* Extensions.swift */; };
+		CB712E9E2BCAF68300B7D114 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712E9D2BCAF68300B7D114 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		CB712E912BCAB5E600B7D114 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CB712E942BCAE94700B7D114 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		CB712E972BCAEC8500B7D114 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CB712E992BCAF02200B7D114 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		CB712E9B2BCAF34000B7D114 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CB712E9D2BCAF68300B7D114 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.release.xcconfig"; sourceTree = "<group>"; };
 		FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +192,8 @@
 			children = (
 				CB712E852BCAB0B300B7D114 /* NetworkManager.swift */,
 				CB712E8D2BCAB2CC00B7D114 /* Consts.swift */,
+				CB712E9B2BCAF34000B7D114 /* Extensions.swift */,
+				CB712E9D2BCAF68300B7D114 /* Utils.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 		CB712E882BCAB1D500B7D114 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				CB712E992BCAF02200B7D114 /* AuthViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -498,9 +507,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB712E862BCAB0B300B7D114 /* NetworkManager.swift in Sources */,
+				CB712E9C2BCAF34000B7D114 /* Extensions.swift in Sources */,
 				CB712E982BCAEC8500B7D114 /* AuthManager.swift in Sources */,
 				CB712E8E2BCAB2CC00B7D114 /* Consts.swift in Sources */,
 				CB712E552BCAA8B700B7D114 /* AppDelegate.swift in Sources */,
+				CB712E9E2BCAF68300B7D114 /* Utils.swift in Sources */,
+				CB712E9A2BCAF02200B7D114 /* AuthViewModel.swift in Sources */,
 				CB712E8C2BCAB23C00B7D114 /* SplashVC.swift in Sources */,
 				CB712E902BCAB5D400B7D114 /* LoginVC.swift in Sources */,
 				CB712E952BCAE94700B7D114 /* Auth.swift in Sources */,

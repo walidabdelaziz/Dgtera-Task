@@ -8,7 +8,7 @@ target 'Dgtera Task' do
 
   # Pods for Dgtera Task
   pod 'Alamofire'
-  pod 'SwiftyJSON'
+  pod 'NVActivityIndicatorView'
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
   pod 'RxCocoa'
@@ -17,7 +17,7 @@ target 'Dgtera Task' do
     inherit! :search_paths
     # Pods for testing
   pod 'Alamofire'
-  pod 'SwiftyJSON'
+  pod 'NVActivityIndicatorView'
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
   pod 'RxCocoa'
