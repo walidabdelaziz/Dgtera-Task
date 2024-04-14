@@ -40,7 +40,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-8Q-cVx">
-                                <rect key="frame" x="4" y="60.666666666666657" width="219" height="17"/>
+                                <rect key="frame" x="4" y="56.666666666666657" width="219" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +64,7 @@
                             <constraint firstItem="0So-ms-Dn8" firstAttribute="top" secondItem="sX9-4N-HRm" secondAttribute="top" id="ayl-mj-VEP"/>
                             <constraint firstItem="ihE-xD-bnc" firstAttribute="bottom" secondItem="0So-ms-Dn8" secondAttribute="bottom" id="fHY-Ey-jWT"/>
                             <constraint firstItem="hSh-8Q-cVx" firstAttribute="leading" secondItem="sX9-4N-HRm" secondAttribute="leading" constant="4" id="lvi-Y5-siY"/>
-                            <constraint firstItem="hSh-8Q-cVx" firstAttribute="centerY" secondItem="sX9-4N-HRm" secondAttribute="centerY" constant="-4" id="ntr-4i-obn"/>
+                            <constraint firstItem="hSh-8Q-cVx" firstAttribute="centerY" secondItem="sX9-4N-HRm" secondAttribute="centerY" constant="-8" id="ntr-4i-obn"/>
                             <constraint firstItem="ihE-xD-bnc" firstAttribute="top" secondItem="0So-ms-Dn8" secondAttribute="top" id="o2r-bj-cdG"/>
                             <constraint firstItem="hSh-8Q-cVx" firstAttribute="centerX" secondItem="sX9-4N-HRm" secondAttribute="centerX" id="pEO-Jd-0JM"/>
                             <constraint firstItem="ihE-xD-bnc" firstAttribute="trailing" secondItem="0So-ms-Dn8" secondAttribute="trailing" id="rZz-Pk-Ked"/>

@@ -34,7 +34,7 @@ class ProductsVC: UIViewController {
     func setProductsCollectionViewsUI(collectionView: UICollectionView, nibName: String){
         collectionView.register(UINib(nibName: nibName, bundle: nil), forCellWithReuseIdentifier: nibName)
         let layout = UICollectionViewFlowLayout()
-        let cellWidth = collectionView.frame.width / 3
+        let cellWidth = collectionView.frame.width / 3 - 4
         layout.itemSize = CGSize(width: cellWidth, height: cellWidth * 1.09)
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 0
