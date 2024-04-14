@@ -29,7 +29,7 @@ class ProductsCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
         [overlaybgV].forEach {
-            $0?.backgroundColor =  .lightGray.withAlphaComponent(0.3)
+            $0?.backgroundColor =  .lightGray.withAlphaComponent(0.6)
         }
         productPriceLbl.textColor = .PrimaryColor
     }

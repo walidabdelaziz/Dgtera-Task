@@ -12,7 +12,8 @@ import Alamofire
 
 class ProductsViewModel {
     let isLoading = BehaviorRelay<Bool>(value: false)
-    let products = BehaviorRelay<[Products]>(value: [])
+    var products = BehaviorRelay<[Products]>(value: [])
+    var orderItems = BehaviorRelay<[Products]>(value: [])
 
     func getProducts() {
         isLoading.accept(true)
@@ -62,5 +63,19 @@ class ProductsViewModel {
                 break
             }
         })
+    }
+    func incrementOrderItemsCount(product: Products) {
+        var updatedProducts = products.value
+        if let index = updatedProducts.firstIndex(where: { $0.id == product.id }) {
+            if let orderViewCount = updatedProducts[index].orderViewCount {
+                updatedProducts[index].orderViewCount = orderViewCount + 1
+            } else {
+                updatedProducts[index].orderViewCount = 1
+            }
+            products.accept(updatedProducts)
+            // Filter order items based on products with non-zero order view count
+            let orderedProducts = updatedProducts.filter { $0.orderViewCount ?? 0 > 0 }
+            orderItems.accept(orderedProducts)
+        }
     }
 }

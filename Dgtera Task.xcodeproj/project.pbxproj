@@ -34,6 +34,10 @@
 		CB712EAB2BCAFD7E00B7D114 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EAA2BCAFD7E00B7D114 /* Products.swift */; };
 		CB712EAE2BCAFFF600B7D114 /* ProductsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EAC2BCAFFF600B7D114 /* ProductsCell.swift */; };
 		CB712EAF2BCAFFF600B7D114 /* ProductsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB712EAD2BCAFFF600B7D114 /* ProductsCell.xib */; };
+		CB712EB22BCB4CAE00B7D114 /* OrderViewTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EB02BCB4CAE00B7D114 /* OrderViewTVCell.swift */; };
+		CB712EB32BCB4CAE00B7D114 /* OrderViewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB712EB12BCB4CAE00B7D114 /* OrderViewTVCell.xib */; };
+		CB712EB82BCB589300B7D114 /* OrderViewFooterTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EB62BCB589300B7D114 /* OrderViewFooterTVCell.swift */; };
+		CB712EB92BCB589300B7D114 /* OrderViewFooterTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB712EB72BCB589300B7D114 /* OrderViewFooterTVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		CB712EAA2BCAFD7E00B7D114 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		CB712EAC2BCAFFF600B7D114 /* ProductsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsCell.swift; sourceTree = "<group>"; };
 		CB712EAD2BCAFFF600B7D114 /* ProductsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsCell.xib; sourceTree = "<group>"; };
+		CB712EB02BCB4CAE00B7D114 /* OrderViewTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewTVCell.swift; sourceTree = "<group>"; };
+		CB712EB12BCB4CAE00B7D114 /* OrderViewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewTVCell.xib; sourceTree = "<group>"; };
+		CB712EB62BCB589300B7D114 /* OrderViewFooterTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewFooterTVCell.swift; sourceTree = "<group>"; };
+		CB712EB72BCB589300B7D114 /* OrderViewFooterTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewFooterTVCell.xib; sourceTree = "<group>"; };
 		CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.release.xcconfig"; sourceTree = "<group>"; };
 		FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +244,10 @@
 			children = (
 				CB712EAC2BCAFFF600B7D114 /* ProductsCell.swift */,
 				CB712EAD2BCAFFF600B7D114 /* ProductsCell.xib */,
+				CB712EB02BCB4CAE00B7D114 /* OrderViewTVCell.swift */,
+				CB712EB12BCB4CAE00B7D114 /* OrderViewTVCell.xib */,
+				CB712EB62BCB589300B7D114 /* OrderViewFooterTVCell.swift */,
+				CB712EB72BCB589300B7D114 /* OrderViewFooterTVCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -404,6 +416,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB712E922BCAB5E600B7D114 /* Auth.storyboard in Resources */,
+				CB712EB32BCB4CAE00B7D114 /* OrderViewTVCell.xib in Resources */,
+				CB712EB92BCB589300B7D114 /* OrderViewFooterTVCell.xib in Resources */,
 				CB712E5E2BCAA8B900B7D114 /* Assets.xcassets in Resources */,
 				CB712E612BCAA8B900B7D114 /* Base in Resources */,
 				CB712EAF2BCAFFF600B7D114 /* ProductsCell.xib in Resources */,
@@ -554,7 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB712E862BCAB0B300B7D114 /* NetworkManager.swift in Sources */,
+				CB712EB22BCB4CAE00B7D114 /* OrderViewTVCell.swift in Sources */,
 				CB712E9C2BCAF34000B7D114 /* Extensions.swift in Sources */,
+				CB712EB82BCB589300B7D114 /* OrderViewFooterTVCell.swift in Sources */,
 				CB712EA32BCAFA7D00B7D114 /* ProductsVC.swift in Sources */,
 				CB712EAB2BCAFD7E00B7D114 /* Products.swift in Sources */,
 				CB712E982BCAEC8500B7D114 /* AuthManager.swift in Sources */,

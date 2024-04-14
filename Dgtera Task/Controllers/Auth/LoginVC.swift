@@ -52,7 +52,7 @@ class LoginVC: UIViewController {
             .subscribe(onNext: { [weak self] errorMessage in
                 guard let self = self else{return}
                 if errorMessage != nil{
-                    self.showErrorDialog(message: errorMessage ?? "")
+                    self.showDialogPopup(title: "Error", message: errorMessage ?? "")
                 }
             }).disposed(by: disposeBag)
     }

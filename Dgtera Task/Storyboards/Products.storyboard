@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WFn-P9-Buz">
-                                <rect key="frame" x="25" y="116.33333333333331" width="368" height="691.66666666666674"/>
+                                <rect key="frame" x="147.33333333333337" y="116.33333333333331" width="245.66666666666663" height="735.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ndi-Zp-dh9">
                                     <size key="itemSize" width="128" height="128"/>
@@ -34,20 +34,40 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ilu-q4-a35">
+                                <rect key="frame" x="0.0" y="116.33333333333331" width="147.33333333333334" height="701.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Products Added" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMg-vW-bh6">
+                                <rect key="frame" x="4" y="447" width="139.33333333333334" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="uyx-0h-JXb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="1qO-N5-gzn"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="WFn-P9-Buz" secondAttribute="bottom" constant="10" id="G4A-8c-QJM"/>
+                            <constraint firstItem="Ilu-q4-a35" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="CqZ-zz-fhX"/>
+                            <constraint firstAttribute="bottom" secondItem="WFn-P9-Buz" secondAttribute="bottom" id="G4A-8c-QJM"/>
                             <constraint firstItem="WFn-P9-Buz" firstAttribute="top" secondItem="uyx-0h-JXb" secondAttribute="bottom" constant="10" id="Inp-4I-3HF"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WFn-P9-Buz" secondAttribute="trailing" id="JIe-hb-cvw"/>
+                            <constraint firstItem="WFn-P9-Buz" firstAttribute="leading" secondItem="Ilu-q4-a35" secondAttribute="trailing" id="Ly0-0j-SMt"/>
                             <constraint firstItem="uyx-0h-JXb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Qgf-9o-b1A"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="uyx-0h-JXb" secondAttribute="trailing" constant="16" id="U1H-zK-RIn"/>
-                            <constraint firstItem="WFn-P9-Buz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="UrP-Mw-GJD"/>
+                            <constraint firstItem="WMg-vW-bh6" firstAttribute="centerX" secondItem="Ilu-q4-a35" secondAttribute="centerX" id="en5-VP-ygW"/>
+                            <constraint firstItem="Ilu-q4-a35" firstAttribute="top" secondItem="uyx-0h-JXb" secondAttribute="bottom" constant="10" id="o0F-Mr-4Xo"/>
+                            <constraint firstItem="WMg-vW-bh6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="4" id="ofa-Rn-WIO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ilu-q4-a35" secondAttribute="bottom" id="vyI-TJ-9g6"/>
+                            <constraint firstItem="WFn-P9-Buz" firstAttribute="leading" secondItem="WMg-vW-bh6" secondAttribute="trailing" constant="4" id="xYP-2V-gzG"/>
+                            <constraint firstItem="WMg-vW-bh6" firstAttribute="centerY" secondItem="Ilu-q4-a35" secondAttribute="centerY" id="ye4-8b-29M"/>
+                            <constraint firstItem="Ilu-q4-a35" firstAttribute="width" secondItem="WFn-P9-Buz" secondAttribute="width" multiplier="0.6" id="yiE-qF-uTE"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="noDataLbl" destination="WMg-vW-bh6" id="rWx-5P-IcO"/>
+                        <outlet property="orderTV" destination="Ilu-q4-a35" id="0Gb-eT-eIP"/>
                         <outlet property="productsCV" destination="WFn-P9-Buz" id="gqj-zI-hak"/>
                         <outlet property="productsLbl" destination="uyx-0h-JXb" id="UPt-RH-wWo"/>
                     </connections>

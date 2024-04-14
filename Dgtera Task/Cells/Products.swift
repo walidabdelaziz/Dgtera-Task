@@ -12,8 +12,8 @@ struct ProductsModel: Codable {
     var result: [Products]?
 }
 
-struct Products: Codable {
-    var id: Int?
+struct Products: Codable, Equatable {
+    var id, orderViewCount: Int?
     var displayName: String?
     var lstPrice: Double?
     var imageSmall: ImageSmall?
@@ -24,7 +24,7 @@ struct Products: Codable {
     var sequence: Int?
 
     enum CodingKeys: String, CodingKey {
-        case id
+        case id, orderViewCount
         case displayName = "display_name"
         case lstPrice = "lst_price"
         case imageSmall = "image_small"
@@ -34,9 +34,12 @@ struct Products: Codable {
         case productVariantIDS = "product_variant_ids"
         case sequence
     }
+    public static func ==(lhs: Products, rhs: Products) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
-enum ImageSmall: Codable {
+enum ImageSmall: Codable,Equatable {
     case bool(Bool)
     case string(String)
 
