@@ -40,9 +40,7 @@ class LoginVC: UIViewController {
             .bind { [weak self](success) in
                 guard let self = self else{return}
                 if success {
-                    let storyboard = UIStoryboard(name: "Products", bundle: nil)
-                    let ProductsVC = storyboard.instantiateViewController(withIdentifier: "ProductsVC")
-                    self.navigationController?.pushViewController(ProductsVC, animated: true)
+                    self.navigateToProductsScreen()
                 }
             }.disposed(by: disposeBag)
         
@@ -52,8 +50,16 @@ class LoginVC: UIViewController {
             .subscribe(onNext: { [weak self] errorMessage in
                 guard let self = self else{return}
                 if errorMessage != nil{
-                    self.showDialogPopup(title: "Error", message: errorMessage ?? "")
+                    self.showDialogPopup(title: "Error", message: errorMessage ?? "") {[weak self] in
+                        guard let self = self else{return}
+                        self.navigateToProductsScreen()
+                    }
                 }
             }).disposed(by: disposeBag)
+    }
+    func navigateToProductsScreen(){
+        let storyboard = UIStoryboard(name: "Products", bundle: nil)
+        let ProductsVC = storyboard.instantiateViewController(withIdentifier: "ProductsVC")
+        navigationController?.pushViewController(ProductsVC, animated: true)
     }
 }

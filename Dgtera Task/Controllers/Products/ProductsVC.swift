@@ -98,8 +98,10 @@ extension ProductsVC: UITableViewDelegate {
         return UITableView.automaticDimension
     }
     @objc func paybgVTapped(gesture: UIGestureRecognizer) {
-        showDialogPopup(title: "Order Confirmed", message: "Order is now being prepared by the restaurant")
-        productsViewModel.resetOrderView()
-        orderTV.reloadData()
+        showDialogPopup(title: "Order Confirmed", message: "Order is now being prepared by the restaurant") {[weak self] in
+            guard let self = self else{return}
+            self.productsViewModel.resetOrderView()
+            self.orderTV.reloadData()
+        }
     }
 }

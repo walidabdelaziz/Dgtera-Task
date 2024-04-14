@@ -9,11 +9,13 @@ import Foundation
 import UIKit
 
 extension UIViewController{
-    func showDialogPopup(title: String,message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alert, animated: true, completion: nil)
-    }
+    func showDialogPopup(title: String, message: String, completion: (() -> Void)? = nil) {
+           let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+               completion?()
+           })
+           present(alert, animated: true, completion: nil)
+       }
 }
 
 extension UIColor {
