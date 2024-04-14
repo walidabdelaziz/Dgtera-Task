@@ -43,15 +43,12 @@ class ProductsVC: UIViewController {
         collectionView.setCollectionViewLayout(layout, animated: true)
     }
     func bindViewModel(){
-        productsViewModel.getProducts()
-        
         // bind order view
         productsViewModel.orderItems
             .bind(to: orderTV.rx.items(cellIdentifier: "OrderViewTVCell", cellType: OrderViewTVCell.self)) { row, orderItem, cell in
                 cell.orderItem = orderItem
             }.disposed(by: disposeBag)
 
-        
         // bind products
         productsViewModel.products
              .bind(to: productsCV.rx.items(cellIdentifier: "ProductsCell", cellType: ProductsCell.self)) { row, product, cell in
@@ -102,7 +99,7 @@ extension ProductsVC: UITableViewDelegate {
     }
     @objc func paybgVTapped(gesture: UIGestureRecognizer) {
         showDialogPopup(title: "Order Confirmed", message: "Order is now being prepared by the restaurant")
-        productsViewModel.orderItems.accept([])
+        productsViewModel.resetOrderView()
         orderTV.reloadData()
     }
 }

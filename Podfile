@@ -12,6 +12,9 @@ target 'Dgtera Task' do
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SQLite.swift', '~> 0.12.0'
+  pod 'ReachabilitySwift'
+
 
   target 'Dgtera TaskTests' do
     inherit! :search_paths
@@ -21,6 +24,9 @@ target 'Dgtera Task' do
   pod 'SDWebImage', '~> 5.11.1'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'SQLite.swift', '~> 0.12.0'
+  pod 'ReachabilitySwift'
+
   end
 
   target 'Dgtera TaskUITests' do

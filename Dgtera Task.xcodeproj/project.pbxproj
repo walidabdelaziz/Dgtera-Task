@@ -38,6 +38,7 @@
 		CB712EB32BCB4CAE00B7D114 /* OrderViewTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB712EB12BCB4CAE00B7D114 /* OrderViewTVCell.xib */; };
 		CB712EB82BCB589300B7D114 /* OrderViewFooterTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EB62BCB589300B7D114 /* OrderViewFooterTVCell.swift */; };
 		CB712EB92BCB589300B7D114 /* OrderViewFooterTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB712EB72BCB589300B7D114 /* OrderViewFooterTVCell.xib */; };
+		CB712EBB2BCBF32D00B7D114 /* SQLiteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB712EBA2BCBF32D00B7D114 /* SQLiteDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		CB712EB12BCB4CAE00B7D114 /* OrderViewTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewTVCell.xib; sourceTree = "<group>"; };
 		CB712EB62BCB589300B7D114 /* OrderViewFooterTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewFooterTVCell.swift; sourceTree = "<group>"; };
 		CB712EB72BCB589300B7D114 /* OrderViewFooterTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewFooterTVCell.xib; sourceTree = "<group>"; };
+		CB712EBA2BCBF32D00B7D114 /* SQLiteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDataManager.swift; sourceTree = "<group>"; };
 		CF0FA4F4D9BA82667C0E50FF /* Pods-Dgtera Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task/Pods-Dgtera Task.release.xcconfig"; sourceTree = "<group>"; };
 		FC68EAEF223AB3510C76F03D /* Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; path = "Target Support Files/Pods-Dgtera Task-Dgtera TaskUITests/Pods-Dgtera Task-Dgtera TaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -277,6 +279,7 @@
 			children = (
 				CB712E972BCAEC8500B7D114 /* AuthManager.swift */,
 				CB712EA82BCAFD4300B7D114 /* ProductsManager.swift */,
+				CB712EBA2BCBF32D00B7D114 /* SQLiteDataManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				CB712EA92BCAFD4300B7D114 /* ProductsManager.swift in Sources */,
 				CB712E552BCAA8B700B7D114 /* AppDelegate.swift in Sources */,
 				CB712EA52BCAFA9000B7D114 /* ProductsViewModel.swift in Sources */,
+				CB712EBB2BCBF32D00B7D114 /* SQLiteDataManager.swift in Sources */,
 				CB712E9E2BCAF68300B7D114 /* Utils.swift in Sources */,
 				CB712E9A2BCAF02200B7D114 /* AuthViewModel.swift in Sources */,
 				CB712E8C2BCAB23C00B7D114 /* SplashVC.swift in Sources */,

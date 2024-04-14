@@ -9,11 +9,34 @@ import Foundation
 import RxSwift
 import RxCocoa
 import Alamofire
+import Reachability
 
 class ProductsViewModel {
     let isLoading = BehaviorRelay<Bool>(value: false)
     var products = BehaviorRelay<[Products]>(value: [])
     var orderItems = BehaviorRelay<[Products]>(value: [])
+    let dataManager = SQLiteDataManager.shared
+    let reachability = try! Reachability()
+    
+    init() {
+        getProductsBasedOnNetwork()
+     }
+
+    func getProductsBasedOnNetwork() {
+         reachability.whenReachable = {[weak self] _ in
+             guard let self = self else{return}
+             self.getProducts()
+         }
+         reachability.whenUnreachable = { [weak self] _ in
+             guard let self = self else{return}
+             self.loadProductsFromDatabase()
+         }
+         do {
+             try reachability.startNotifier()
+         } catch {
+             print("Unable to start notifier")
+         }
+     }
 
     func getProducts() {
         isLoading.accept(true)
@@ -55,12 +78,25 @@ class ProductsViewModel {
             self.isLoading.accept(false)
             switch result {
             case .success(let response):
-                // Process the data response here
-                self.products.accept(response)
-                break
+                let savedProducts = dataManager.getProducts()
+                // Check if all saved products are present in the response products
+                let allSavedProductsInResponse = savedProducts.allSatisfy { savedProduct in
+                    response.contains { $0.id == savedProduct.id }
+                }
+                // Check if all response products are present in the saved products
+                let allResponseProductsInSaved = response.allSatisfy { responseProduct in
+                    savedProducts.contains { $0.id == responseProduct.id }
+                }
+                // If all saved products are present in the response products and vice versa, they are equal
+                if allSavedProductsInResponse && allResponseProductsInSaved {
+                    self.loadProductsFromDatabase()
+                } else {
+                    // If not all saved products are present in the response
+                    self.products.accept(response)
+                    self.dataManager.saveProducts(response)
+                }
             case .failure(let error):
                 print("error is \(error)")
-                break
             }
         })
     }
@@ -73,9 +109,31 @@ class ProductsViewModel {
                 updatedProducts[index].orderViewCount = 1
             }
             products.accept(updatedProducts)
-            // Filter order items based on products with non-zero order view count
-            let orderedProducts = updatedProducts.filter { $0.orderViewCount ?? 0 > 0 }
-            orderItems.accept(orderedProducts)
+            updateOrderItems()
         }
+    }
+    private func updateOrderItems() {
+        dataManager.saveProducts(products.value)
+        // Filter order items based on products with non-zero order view count
+        filter_Products_BasedOn_OrderView_Count(products: products.value)
+    }
+    private func loadProductsFromDatabase() {
+        let savedProducts = dataManager.getProducts()
+        products.accept(savedProducts)
+        // Update order items based on saved products
+        filter_Products_BasedOn_OrderView_Count(products: savedProducts)
+    }
+    func filter_Products_BasedOn_OrderView_Count(products: [Products]){
+        let orderedProducts = products.filter { $0.orderViewCount ?? 0 > 0 }
+        orderItems.accept(orderedProducts)
+    }
+    func resetOrderView(){
+        orderItems.accept([])
+        var updatedProducts = products.value
+        updatedProducts.indices.forEach { index in
+            updatedProducts[index].orderViewCount = 0
+        }
+        products.accept(updatedProducts)
+        dataManager.saveProducts(products.value)
     }
 }
